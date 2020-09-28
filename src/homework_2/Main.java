@@ -168,17 +168,17 @@ public class Main {
         if (n > 0) {
             for (int i = 0; i < shift; i++) {
                 for (int j = 0; j < array.length; j++) {
-                    int nextElement = array[j];
+                    int temp = array[j];
                     array[j] = array[0];
-                    array[0] = nextElement;
+                    array[0] = temp;
                 }
             }
         } else {
             for (int i = shift; i < 0; i++) {
                 for (int j = array.length - 2; j >= 0; j--) {
-                    int nextElement = array[j];
+                    int temp = array[j];
                     array[j] = array[array.length-1];
-                    array[array.length-1] = nextElement;
+                    array[array.length-1] = temp;
                 }
             }
         }
