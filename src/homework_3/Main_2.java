@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+public class Main_2 {
 
     private final static Scanner scanner = new Scanner(System.in);
     private final static Random random = new Random();
@@ -23,6 +23,7 @@ public class Main {
             answerTrue = checkAnswer(randomWord, answer);
         } while (!answerTrue);
     }
+
     private static boolean checkAnswer(String randomWord, String answer) {
         if (randomWord.equals(answer)) {
             System.out.println("Вы угадали! Игра завершена.");
@@ -46,4 +47,5 @@ public class Main {
             return false;
         }
     }
+
 }
