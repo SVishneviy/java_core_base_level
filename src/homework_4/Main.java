@@ -42,7 +42,6 @@ public class Main {
     }
 
     public static boolean checkWin(char symbol) {
-
         for (int i = 0; i < SIZE - 3; i++) {
             for (int j = 0; j < SIZE - 3; j++) {
                 if (checkLines(i, j, symbol) || checkDiagonals(i, j, symbol)) {
@@ -50,28 +49,7 @@ public class Main {
                 }
             }
         }
-
         return false;
-        /*boolean line_1;
-        boolean line_2;
-        for (int i = 0; i < SIZE; i++) {
-            line_1 = true;
-            line_2 = true;
-            for (int j = 0; j < SIZE; j++) {
-                line_1 = line_1 & (map[i][j] == symbol);
-                line_2 = line_2 & (map[j][i] == symbol);
-            }
-            if (line_1 || line_2) {
-                return true;
-            }
-        }
-        boolean leftDiagonal = true;
-        boolean rightDiagonal = true;
-        for (int i = 0; i < SIZE; i++) {
-            leftDiagonal = leftDiagonal & (map[(SIZE - 1) - i][i] == symbol);
-            rightDiagonal = rightDiagonal & (map[i][i] == symbol);
-        }
-        return leftDiagonal || rightDiagonal; */
     }
 
     public static boolean isMapFull() {
