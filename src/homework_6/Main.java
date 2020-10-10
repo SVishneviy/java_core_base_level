@@ -17,8 +17,8 @@ public class Main {
 
         for (Animal animal : animals) {
             animal.printInformation();
-            animal.printRun((int) (Math.random() * 210));
-            animal.printSwim((int) (Math.random() * 5));
+            animal.printRun((int) (Math.random() * 510));
+            animal.printSwim((int) (Math.random() * 20));
         }
 
         System.out.printf("Всего котов: %d.\n", Cat.getCountCats());
